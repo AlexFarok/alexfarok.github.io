@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Decorior</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/main-menu-icon.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/max466.css">
+	<link rel="stylesheet" type="text/css" href="css/max1024.css">
+	<link rel="stylesheet" type="text/css" href="css/min1025px.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+</head>
+<body>
+	<div class="container-auto">
+		<header class="main-header container">
+
+			<div class="main-header__top-row--main-menu container">
+				<div class="main-menu__header">
+					<img src="img/logo-main-menu.png" alt="" class="main-menu__header--logo">
+					<button class="main-menu__header--close-button"></button>
+				</div>
+				<ul class="main-menu__item-list">
+					<li class="main-menu__item main-menu__item--entry">
+						<a href="#">Вход / Регистрация</a>
+					</li>
+					<li class="main-menu__item main-menu__item--main-page">
+						<i class="sprite-main-menu sprite-mmi1"></i>
+						<a href="#">Главная</a>
+					</li>
+					<li class="main-menu__item main-menu__item--bottom-line">
+						<i class="sprite-main-menu sprite-mmi2"></i>
+						<a href="#">Каталог товаров</a> <button class="main-menu__item--next-button main-menu__item--to-catalog"><i class="sprite-next_menu sprite-main-menu "></i></button>
+					</li>
+					<li class="main-menu__item">
+						<i class="sprite-main-menu sprite-mmi3"></i>
+						<a href="#">Вопросы и ответы</a>
+					</li>
+					<li class="main-menu__item">
+						<i class="sprite-main-menu sprite-mmi4"></i>
+						<a href="#">Мгновенная рассрочка</a>
+					</li>
+					<li class="main-menu__item">
+						<i class="sprite-main-menu sprite-mmi5"></i>
+						<a href="#">Оплата частями</a>
+					</li>
+					<li class="main-menu__item">
+						<i class="sprite-main-menu sprite-mmi6"></i>
+						<a href="#">Гарантия</a>
+					</li>
+					<li class="main-menu__item">
+						<i class="sprite-main-menu sprite-mmi7"></i>
+						<a href="#">Доставка и оплата</a>
+					</li>
+					<li class="main-menu__item">
+						<i class="sprite-main-menu sprite-mmi8"></i>
+						<a href="#">Отследить заказ</a>
+					</li>
+					<li class="main-menu__item main-menu__item--bottom-line">
+						<i class="sprite-main-menu sprite-mmi9"></i>
+						<a href="#">Контакты</a>
+					</li>
+					<li class="main-menu__item">
+						<i class="sprite-main-menu sprite-mmi10"></i
+							><a href="#">Личный кабинет</a><button class="main-menu__item--next-button main-menu__item--to-account"><i class="sprite-next_menu sprite-main-menu "></i></button>
+						</li>
+						<li class="main-menu__item">
+							<i class="sprite-main-menu sprite-mmi11"></i
+								><a href="#">Корзина</a><b class="basket-value">10</b>
+							</li>
+							<li class="main-menu__item">
+								<i class="sprite-main-menu sprite-mmi12"></i
+									><a href="#">Сравнение</a>
+								</li>
+								<li class="main-menu__item">
+									<i class="sprite-main-menu sprite-mmi13"></i
+										><a href="#">РУ</a>
+									</li>
+				</ul>
+			</div>
+
+			<div class="main-header__top-row">
+				<button id="MainTogler" class="main-header__top-row--toggler"><i class="main-header__top-row--toggler"></i></button>
+				<div class="main-header__top-row--logo"><img src="img/logo-main-menu.png"></div>
+			</div>
+
+			<div class="main-header__bottom-row">
+				<input type="text" class="main-header__bottom-row-search-input">
+				<button class="main-header__bottom-row-search-button"></button>
+			</div>
+
+			<div class="main-header__top-row--button-box">
+				<button class="button-box--account-button button-box--item"></button>
+				<button class="button-box--basket-button button-box--item"><b class="basket-sticker">10</b></button>
+
+			</div>
+		</header>
+		<header class="large-header ">
+			<div class="large-header__top-row container">
+				<div class="top-row__top-menu">
+					<ul class="top-menu__list">
+						<li class="top-menu__item"><a href="#">Вопросы и ответы</a></li>
+						<li class="top-menu__item"><a href="#">Рассрочка</a></li>
+						<li class="top-menu__item"><a href="#">Гарантия</a></li>
+						<li class="top-menu__item"><a href="#">Доставка и оплата</a></li>
+						<li class="top-menu__item"><a href="#">Отследить заказ</a></li>
+						<li class="top-menu__item"><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="top-row__phone-list">
+					<div class="phone-list">
+						<div class="phone-list__title">
+							<span id="openPhone" class="open-phone-span">050-405-75-50</span>							
+						</div>
+						<div class="phone-list__phone-menu">
+							<ul class="phone-list-hide">
+								<li class="phone-list-hide--item">0-800-750-090</li>
+								<li class="phone-list-hide--item">067-577-77-12</li>
+								<li class="phone-list-hide--item">057-719-99-00</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="top-row__phone-list--after1350">
+					<ul class="phone-list">
+						<li class="phone-item">0-800-750-090 <span class="small-phone">(бесплатно по Украине) </span></li>
+						<li class="phone-item">050-405-75-50 </li>
+						<li class="phone-item">067-577-77-12</li>
+						<li class="phone-item">057-719-99-00</li>
+					</ul>
+				</div>
+				<div class="top-row__call-back">
+					<button class="top-row__call-back--button">Обратный звонок</button>
+				</div>
+			</div>
+			<div class="large-header__bottom-row">
+				<div class="bottom-row__logo-box">
+					<img src="img/Logo.png">
+				</div>
+				<div class="bottom-row__search-box">
+					<input type="text" class="bottom-row__search-box--search-area" placeholder="Я ищу...(например «плитка для пола»)">
+					<div class="bottom-row__search-box--search-category">
+						<details class="search__category-box">
+							<summary class="category-list__title">По всем категориям</summary>
+							<ul class="search__category-list">
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Плитка для стен</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Плитка для пола и кермогранит</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Мозаика</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Клинкер</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Ванны</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Гидромассаж</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Умывальники</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Унитазы</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Смесители</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Мебель для ванных</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Плитка для стен</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Плитка для пола и кермогранит</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Мозаика</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Клинкер</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Ванны</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Гидромассаж</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Умывальники</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Унитазы</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Смесители</a>
+								</li>
+								<li class="category-list__category-item">
+									<a href="#" class="category-list__category-item--link">Мебель для ванных</a>
+								</li>
+							</ul>
+						</details>
+					</div>
+					<button class="bottom-row__search-box--search-button">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 451 451" style="enable-background:new 0 0 451 451;" xml:space="preserve" width="22px" height="22px">
+							<g>
+								<path d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z" fill="#808080"/>
+							</g>
+						</svg>
+					</button>
+				</div>
+				<div class="bottom-row__icon-box">
+					<div class="bottom-row__icon-box--language">
+						<button class="language-icon">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 20 20">
+								  	<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+									<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+									   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+									      <rdf:Description rdf:about=""/>
+									   </rdf:RDF>
+									</x:xmpmeta>
+									<?xpacket end="w"?></metadata>
+									<image id="Layer_2_copy" data-name="Layer 2 copy" width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiAgoWHzvm35tVAAABzElEQVQoz3WTXUsTcBTGf1tC0MVa4J1GxCIwKDKkoKLLwKGEF8Paij5AaNCdUF4LEfgBvBGKELroBbaWYEVY+dbL1oh004ppkBeNQUGk+3Wxzbai8785/J9zDg/PeU5AGuI8h+hmB/Cdh2S42YBZfz3Om1JnTJt2Rk05b08dr5ddc8U++82JQw6JOfvtc8WrjYWD6oT4zi5xzDHxiFlxQh0UCQLdjHKULxSRLLDOVyAHFFnjGKNEqxxXqz1O+tEX3nXRJe/53E9OijjgqmDcfI3nY08a8YJvfOtFI57ySQ1ZNNFCnAcARAiRoUyBA8A4sE6ICAXgPueC7OIWAC2UKAMQIABAmRItANwmHHCOz6xRoYOD3GEbPzkNPGI7m8TI8J4gbewONmgf4N+o/lUQp+0Scb9TNeojjtSyKTtE7PRZkG/EAdggRLhpWogwvwBIUMK4S1vynLDNmAsuGLPd4z6tIR9MVAUfEDHpstMmzZs36bQF0yJesljddVTt9LpFc+7c4hgya9EbHnbDaHXXSS7zin20s0kEaKUV2EuFdvbwmisk//hx2GXP/GWzs/ZacLjZj9jjnEl11rRpX6opZ+2t44H/nMIPUs2n8BsigGrt99FbagAAAABJRU5ErkJggg=="/>
+							</svg>
+						</button>
+						<span class="language-text">РУ</span>
+					</div>
+					<div class="bottom-row__icon-box--acount-box">
+						<a href="#" class="icon-link">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 23 22">
+ 								 <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+								<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+							   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+							      <rdf:Description rdf:about=""/>
+							   </rdf:RDF>
+								</x:xmpmeta>
+								<?xpacket end="w"?></metadata>
+								<image width="23" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAQAAAClvJ5NAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiAgwKCSKue4OKAAABb0lEQVQ4y42SPUubYRSGr9e2SktQM/hVLYIuHQ0oZAgO6uQidOrSqXRoEbcKDv4ESf+EFZdC6OSmNFBEUBedNIOIFQvSUsXWGq4Oofh+as6ZnvOc6/m47xNIIgZ5xSRPOWKNZb4l9o3ngtGYjXfEgQ/qX2ftEQecV3XxLmRKPbUvVBn2Qh3NRvbVsdi90+pGFvJM/Zr4Gx6q+dt1S0iJYWA9KSBfgIHbZRj5DXSkIHngT7rI7epJysMuvLYt6/sf1YUYUFbL2Yr1WlffhSrv1Z/m7rJyQtVN3/rSOffUq6grpgzMcz+HxmXVwXhHkDKW8JAxejlmK20zihQYops6Z1xywyNydNHCGTV20kR+7aHZUfNN9GGdVBgHPlHlOwFB5MQuSrwAqsxw3qg99kBdsT/Fxv/Z74pa80lDsUrcrIxcUiuCRXW3CQBxWy02hqTQJDKiLgeek6MVeMB9UQeu+RXova0Jn8uU6KQ5MOAH1X9CfPM38gvOZgAAAABJRU5ErkJggg=="/>
+							</svg>
+
+						</a>
+					</div>
+					<div class="bottom-row__icon-box--comparison-box">
+						<a href="#" class="icon-link">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="		25" height="25" viewBox="0 0 26 26">
+								  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+									<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+									   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+									      <rdf:Description rdf:about=""/>
+									   </rdf:RDF>
+									</x:xmpmeta><?xpacket end="w"?></metadata>
+									<image id="comparison_копия" data-name="comparison копия" width="26" height="26" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAQAAAADQ4RFAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiAgoXCQhEVSWjAAABr0lEQVQ4y72SP2gUURCHvz08iIVnEQieVUAJqJBCBAmSaGwkKUypERQhIAqiWCmK2AhiEWy0NBG1UDhBECwUgp1CGhE5Qc2JGLjGEAla+If9LPbdenu3q2jhTPMeM9/M782bSApsDtidH4oKIYEoP7SqiKFZGKHEP9h/g8p/A61mjBlilooHUeLXYAcZYZRxeoAFbmORv7Fhrwes2bJ3jlsVKUJ2+jFNvu+c+tVGK9qZ3O8RH4fkF95wwor4yuduVh9koTXu8bLzIf2Jx9yQFppRB8Sr6kgCbfGsL1MpZ9xhlOm9Ub0TzrHLCaT6xbsBGuh63Wu1HM771dOCEw6L59UhG37rQKZakoLPqpVkyzdR5xaH2MY81zie/s86msScohLuP6hygnsJ/0EtifhI7UvrHjTXEI+qUyGtoj5Loe25zAL2qLU21XvVfeltMQe6GDnLYS7xlnLQ/ZmbxPSxDMAYDzt2coUqOZVidTLtdTITazoo2MzVPdwmeKvXrfvep15wbfK50znIUphlu7ftCfb6vQua7EIyjjjkSgY593ukteXrvWLdTy5ac9efEPkJ3u9ppDFvBSMAAAAASUVORK5CYII="/>
+							</svg>
+							<span class="sticker-icon">10</span>
+						</a>
+					</div>
+					<div class="bottom-row__icon-box--wish-list">
+						<a href="#" class="icon-link">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version=		"1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 487.222 487.222" style="enable-background:new 0 0 487.222 487.222;" xml:space="preserve" width="25px" height="25px">
+								<g>
+									<path d="M486.554,186.811c-1.6-4.9-5.8-8.4-10.9-9.2l-152-21.6l-68.4-137.5c-2.3-4.6-7-7.5-12.1-7.5l0,0c-5.1,0-9.8,2.9-12.1,7.6   l-67.5,137.9l-152,22.6c-5.1,0.8-9.3,4.3-10.9,9.2s-0.2,10.3,3.5,13.8l110.3,106.9l-25.5,151.4c-0.9,5.1,1.2,10.2,5.4,13.2   c2.3,1.7,5.1,2.6,7.9,2.6c2.2,0,4.3-0.5,6.3-1.6l135.7-71.9l136.1,71.1c2,1,4.1,1.5,6.2,1.5l0,0c7.4,0,13.5-6.1,13.5-13.5   c0-1.1-0.1-2.1-0.4-3.1l-26.3-150.5l109.6-107.5C486.854,197.111,488.154,191.711,486.554,186.811z M349.554,293.911   c-3.2,3.1-4.6,7.6-3.8,12l22.9,131.3l-118.2-61.7c-3.9-2.1-8.6-2-12.6,0l-117.8,62.4l22.1-131.5c0.7-4.4-0.7-8.8-3.9-11.9   l-95.6-92.8l131.9-19.6c4.4-0.7,8.2-3.4,10.1-7.4l58.6-119.7l59.4,119.4c2,4,5.8,6.7,10.2,7.4l132,18.8L349.554,293.911z" fill="#FFFFFF"/>
+								</g>
+
+							</svg>
+							<span class="sticker-icon">10</span>
+						</a>
+
+					</div>
+					<div class="bottom-row__icon-box--basket-box">
+						<a href="#" class="icon-link">
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="		25" height="25" viewBox="0 0 25 25">
+								  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+									<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								      <rdf:Description rdf:about=""/>
+								   </rdf:RDF>
+									</x:xmpmeta>
+									<?xpacket end="w"?></metadata>
+									<image id="full_cart_icon" data-name="full cart icon" width="25" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiAgoXCzhQuneNAAACCUlEQVQ4y42TTUhUYRSGn5mxSVFspgJJHYQybWEJ2UYkRciCgkCqhQW1HqKIllG0D4xoU1C7CBfRImjTwopo48IMIkyUiugPzZJyNPx7Wvg5cytFzwv3fu/hvt977uGcmAfoZAEY4wEvWEv40aWYtENWB/ZbiOdrkcTczhFSNNMKfKWB8dULW0TK1+q0zau7xINygqdAMTsBKOcWnUA3Z4BLXAlftdHDwaK83TAAjYFtIwXUMA1UsQGABJdpp6VgeEjVXmMiJkTCeQkZf6jf4nmXEcaAeirYwynmaSCLVHKOMoo5TxWVpIA3hTvW+VLVJi/4Ssz6xRLbnbLOjPO22qXqtajxfVVPW2qFGLNSxOrwLPK2qseKIv0eCg3IkaOJ93xmFxN8oI4Eg6E1OQaiLsdV7RPX+92L4qB3xV4HxCpH1Wcmo5JGp9RJq8XdbhQbzIi17hAPu6B2S1SSckTVO241adqMJZabscxi632i6lGJGZ2eR+wHIEeOBCAQQxZIkQTGaWEo+vswFCSllC47kKO8g/hfqXuMMcvMspjlNz3M8E9hUEsNc+SYoIR0PvuTX6RJ0M8crDTibW6JsHLbLSts5f+otU/9ZFfgLY6ow+5dWXI1rPVbN4v4MPDHi5MdX6YvFeGdJgnApnw+Fl3kKPY5p+r1wLPBJbtyYdjhDc+azPOT3vTEEvsDi5EANd5S53kAAAAASUVORK5CYII="/>
+							</svg>
+							<span class="sticker-icon">10</span>
+						</a>
+
+					</div>
+				</div>
+ 
+				<div class="large-header__bottom-row--category-menu catalog__main-menu">
+					<details>
+						<summary class="category-menu__title ">Каталог товаров</summary>
+						<ul class="category-menu">
+							<a href="" class="category-link_1">
+								<li class="category-item"> Плитка для стен 
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item">
+													Декоры для стен
+												</li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item">
+													Фризы для стен
+												</li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item">
+													Мозаика универсальная
+												</li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item">
+													Мозаика декоративная
+												</li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item">
+													Плитка для стен
+												</li>
+											</a>
+											<a href="" class="subcategory-link_6">
+												<li class="subcategory-item">
+													Декоры для пола
+												</li>
+											</a>
+											<a href="" class="subcategory-link_7">
+												<li class="subcategory-item">
+													Фризы для пола
+												</li>
+											</a>
+											<a href="" class="subcategory-link_8">
+												<li class="subcategory-item">
+													Плитка для пола
+												</li>
+											</a>
+										</ul>
+										<div class="subcategory-img">
+											<img src="img/subcategory-img.png">
+										</div>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_2">
+								<li class="category-item"> Плитка для пола и кермогранит
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_3">
+								<li class="category-item"> Мозаика
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_4">
+								<li class="category-item"> Клинкер
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_5">
+								<li class="category-item"> Ванны
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_6">
+								<li class="category-item"> Гидромассаж
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_7">
+								<li class="category-item"> Умывальники
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_8">
+								<li class="category-item"> Унитазы
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_9">
+								<li class="category-item"> Смесители
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_10">
+								<li class="category-item"> Мебель для ванных
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_11">
+								<li class="category-item"> Душевые кабины
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_12">
+								<li class="category-item"> Зеркала
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_13">
+								<li class="category-item"> Аксессуары
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_14">
+								<li class="category-item"> Инсталяции
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_15">
+								<li class="category-item"> Полотенцесушители
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_16">
+								<li class="category-item"> Клей
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_17">
+								<li class="category-item"> Затирки для швов
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_18">
+								<li class="category-item"> Чистящие средсва
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_19">
+								<li class="category-item"> Химия строительная
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_20">
+								<li class="category-item"> Сантехарматура
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_21">
+								<li class="category-item"> Монтаж плитки
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_22">
+								<li class="category-item"> Профили пластиковые
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_23">
+								<li class="category-item"> Профили металлические
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_24">
+								<li class="category-item"> Электроводонагреватели
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_25">
+								<li class="category-item"> Радиаторы
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_26">
+								<li class="category-item"> Мойки
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_27">
+								<li class="category-item"> Обои
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_28">
+								<li class="category-item"> Ламинат
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+							<a href="" class="category-link_29">
+								<li class="category-item"> Линолеум
+									<div class="subcategory-list">
+										<ul class="subcategory-box">
+											<a href="" class="subcategory-link_1">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_2">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_3">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_4">
+												<li class="subcategory-item"></li>
+											</a>
+											<a href="" class="subcategory-link_5">
+												<li class="subcategory-item"></li>
+											</a>
+										</ul>
+									</div>
+								</li>
+							</a>
+						</ul>
+
+					</details>
+				</div>
+			</div>
+		</header>
+		<main class="container">
+			<div class="breadcrumbs">
+				<a href="#" class="breadcrumbs__item">Главная</a>
+				<a href="#" class="breadcrumbs__item">Каталог</a>
+				<a href="#" class="breadcrumbs__item">Коллекции</a>
+				<a href="#" class="breadcrumbs__item">Плитка для стен</a>		
+			</div>
+			<div class="category-page-box">				
+					<div class="page-title"><h1>ПЛИТКА ДЛЯ СТЕН </h1></div>
+					<div class="collection-header">
+						<span class="collection-header__category-title">КОЛЛЕКЦИИ</span>
+						<a href="#" class="collection-header__view-all">ПРОСМОТРЕТЬ ВСЕ</a>
+					</div>
+					<div class="collection-item-wrapper">
+						<div class="collection-item">
+							<a class="collection-item__link" href="#">
+								<div class="sale-box__sale-item--header-img">
+									<img src="img/sale-item1.png" alt="" width="" height="">
+									<button class="add-compare"></button>
+									<button class="add-wish"></button>
+									<div class="collection-item__info-box">
+										<div class="infobox">
+											<span class="infobox__collection-name">2208 tabaco - porcelanite dos</span>
+											<span class="infobox__manufacture-country">ИСПАНИЯ</span>
+										</div>
+										<div class="info-box__price-box--sale-price">
+											<span class="normal-ptice"><span class="main-price">837.</span>
+											грн/м2</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="collection-item for-tablet">
+							<a class="collection-item__link" href="#">
+								<div class="sale-box__sale-item--header-img">
+									<img src="img/sale-item2.png" alt="" width="" height="">
+									<button class="add-compare"></button>
+									<button class="add-wish"></button>
+									<div class="collection-item__info-box">
+										<div class="infobox">
+											<span class="infobox__collection-name">2208 tabaco - porcelanite dos</span>
+											<span class="infobox__manufacture-country">ИСПАНИЯ</span>
+										</div>
+										<div class="info-box__price-box--normal-price">
+											<span class="normal-ptice"><span class="main-price">797.</span>
+											грн/м2</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="collection-item for-desktop">
+							<a class="collection-item__link" href="#">
+								<div class="sale-box__sale-item--header-img">
+									<img src="img/sale-item3.png" alt="" width="" height="">
+									<button class="add-compare"></button>
+									<button class="add-wish"></button>
+									<div class="collection-item__info-box">
+										<div class="infobox">
+											<span class="infobox__collection-name">2208 tabaco - porcelanite dos</span>
+											<span class="infobox__manufacture-country">ИСПАНИЯ</span>
+										</div>
+										<div class="info-box__price-box--normal-price">
+											<span class="main-price">797.</span>
+											<span class="normal-ptice">грн/м2</span>
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+				</div>
+
+				<div class="goods-box">
+					<div class="collection-header__category-title">ТОВАРЫ</div>
+					<div class="goods-list">
+						<a class="goods-list__goods-link" href="#">
+							<div class="goods-list__goods_row--icon"><img src="img/goods1.jpg" alt=""></div>
+							<div class="goods-list__goods_row--title"><span>Декоры для стен</span></div>
+						</a>
+						<a class="goods-list__goods-link" href="#">
+							<div class="goods-list__goods_row--icon"><img src="img/goods2.jpg" alt=""></div>
+							<div class="goods-list__goods_row--title"><span>Фризы для стен</span></div>
+						</a>
+						<a class="goods-list__goods-link" href="#">
+							<div class="goods-list__goods_row--icon"><img src="img/goods3.jpg" alt=""></div>
+							<div class="goods-list__goods_row--title"><span>Мозаика универсальная</span></div>
+						</a>
+						<a class="goods-list__goods-link" href="#">
+							<div class="goods-list__goods_row--icon"><img src="img/goods4.jpg" alt=""></div>
+							<div class="goods-list__goods_row--title"><span>Мозаика декоративная</span></div>
+						</a>
+						<a class="goods-list__goods-link" href="#">
+							<div class="goods-list__goods_row--icon"><img src="img/goods5.jpg" alt=""></div>
+							<div class="goods-list__goods_row--title"><span>Плитка для стен</span></div>
+						</a>
+						<a class="goods-list__goods-link" href="#">
+							<div class="goods-list__goods_row--icon"><img src="img/goods6.jpg" alt=""></div>
+							<div class="goods-list__goods_row--title"><span>Декоры для пола</span></div>
+						</a>
+						<a class="goods-list__goods-link" href="#">
+							<div class="goods-list__goods_row--icon"><img src="img/categories-slider3.png" alt=""></div>
+							<div class="goods-list__goods_row--title"><span>Декоры для пола</span></div>
+						</a>
+						<a class="goods-list__goods-link" href="#">
+							<div class="goods-list__goods_row--icon"><img src="img/goods8.jpg" alt=""></div>
+							<div class="goods-list__goods_row--title"><span>Плитка для пола</span></div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<footer class="main-footer ">
+										<div class="main-footer__catalog-list">
+											<div class="catalog-list-title"><span>Каталог</span></div>
+											<div class="catalog-box-list">
+												<ul class="catalog-list">
+													<li class="catalog-list__catalog--item"><a href="#">Ванны, гидромассаж</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Унитазы, раковины</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Смесители</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Мебель для ванных</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Душевые кабины</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Аксессуары</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Полотенцесушители</a></li>
+												</ul>
+												<ul class="catalog-list">
+													<li class="catalog-list__catalog--item"><a href="#">Клей</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Затирки для швов</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Химия строительная</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Сантехарматура</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Профили, крестики</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Бойлеры</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Моики</a></li>
+												</ul>
+												<ul class="catalog-list">
+													<li class="catalog-list__catalog--item"><a href="#">Плитка для стен</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Плитка для пола, кермогранит</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Мозаика</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Клинкер</a></li>
+													<li class="catalog-list__catalog--item"><a href="#">Ламинат, обои</a></li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="main-footer__contacts">
+											<div class="contacts-list-title"><span>Контакты</span>	</div>
+											<div class="contacts-row">
+												<ul class="adress-list">
+													<li class="adress-item">г.Харьков</li>
+													<li class="adress-item">пр. Московский 257-А,метро «Дворец Спорта»</li>
+													<li class="adress-item">057-719-99-00</li>
+												</ul>
+											</div>
+											<div class="contacts-row">
+												<ul class="adress-list">
+													<li class="adress-item">г.Полтава</li>
+													<li class="adress-item">ул. Зеньковская 6-В, ТРЦ «Киев»</li>
+													<li class="adress-item">057-719-99-00</li>
+												</ul>
+											</div>
+											<div class="contacts-row">
+												<ul class="adress-list">
+													<li class="adress-item">г.Сумы</li>
+													<li class="adress-item">ул. Харьковская 107</li>
+													<li class="adress-item">054-265-10-07</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="main-footer__about-list">
+											<div class="about-list-title"><span>О компании</span></div>
+											<div class="about-wrapper">
+												<div class="about-box-list">
+													<ul class="about-list">
+														<li class="about-list__item"><a href="#">Уголок покупателя</a></li>
+														<li class="about-list__item"><a href="#">Пользовательское соглашение</a></li>
+													</ul>
+												</div>
+												<div class="main-footer__social-list">
+													<a href="#" class="main-footer__social-list--fb">
+														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+															<g>
+																<g>
+																	<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M31,25.7h-4.039c0,6.453,0,14.396,0,14.396h-5.985c0,0,0-7.866,0-14.396h-2.845v-5.088h2.845    v-3.291c0-2.357,1.12-6.04,6.04-6.04l4.435,0.017v4.939c0,0-2.695,0-3.219,0c-0.524,0-1.269,0.262-1.269,1.386v2.99h4.56L31,25.7z    " fill="#808080"/>
+																</g>
+															</svg>
+
+														</a>
+														<a href="#" class="main-footer__social-list--tw">
+															<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+																<g>
+																	<g>
+																		<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826    C49.652,11.137,38.516,0,24.826,0z M35.901,19.144c0.011,0.246,0.017,0.494,0.017,0.742c0,7.551-5.746,16.255-16.259,16.255    c-3.227,0-6.231-0.943-8.759-2.565c0.447,0.053,0.902,0.08,1.363,0.08c2.678,0,5.141-0.914,7.097-2.446    c-2.5-0.046-4.611-1.698-5.338-3.969c0.348,0.066,0.707,0.103,1.074,0.103c0.521,0,1.027-0.068,1.506-0.199    c-2.614-0.524-4.583-2.833-4.583-5.603c0-0.024,0-0.049,0.001-0.072c0.77,0.427,1.651,0.685,2.587,0.714    c-1.532-1.023-2.541-2.773-2.541-4.755c0-1.048,0.281-2.03,0.773-2.874c2.817,3.458,7.029,5.732,11.777,5.972    c-0.098-0.419-0.147-0.854-0.147-1.303c0-3.155,2.558-5.714,5.713-5.714c1.644,0,3.127,0.694,4.171,1.804    c1.303-0.256,2.523-0.73,3.63-1.387c-0.43,1.335-1.333,2.454-2.516,3.162c1.157-0.138,2.261-0.444,3.282-0.899    C37.987,17.334,37.018,18.341,35.901,19.144z" fill="#808080"/>
+																	</g>
+																</svg>
+
+															</a>
+															<a href="#" class="main-footer__social-list--inst">
+																<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 49.652 49.652" style="enable-background:new 0 0 49.652 49.652;" xml:space="preserve">
+																	<g>
+																		<g>
+																			<g>
+																				<path d="M24.825,29.796c2.739,0,4.972-2.229,4.972-4.97c0-1.082-0.354-2.081-0.94-2.897c-0.903-1.252-2.371-2.073-4.029-2.073     c-1.659,0-3.126,0.82-4.031,2.072c-0.588,0.816-0.939,1.815-0.94,2.897C19.854,27.566,22.085,29.796,24.825,29.796z" fill="#808080"/>
+																				<polygon points="35.678,18.746 35.678,14.58 35.678,13.96 35.055,13.962 30.891,13.975 30.907,18.762    " fill="#808080"/>
+																				<path d="M24.826,0C11.137,0,0,11.137,0,24.826c0,13.688,11.137,24.826,24.826,24.826c13.688,0,24.826-11.138,24.826-24.826     C49.652,11.137,38.516,0,24.826,0z M38.945,21.929v11.56c0,3.011-2.448,5.458-5.457,5.458H16.164     c-3.01,0-5.457-2.447-5.457-5.458v-11.56v-5.764c0-3.01,2.447-5.457,5.457-5.457h17.323c3.01,0,5.458,2.447,5.458,5.457V21.929z" fill="#808080"/>
+																				<path d="M32.549,24.826c0,4.257-3.464,7.723-7.723,7.723c-4.259,0-7.722-3.466-7.722-7.723c0-1.024,0.204-2.003,0.568-2.897     h-4.215v11.56c0,1.494,1.213,2.704,2.706,2.704h17.323c1.491,0,2.706-1.21,2.706-2.704v-11.56h-4.217     C32.342,22.823,32.549,23.802,32.549,24.826z" fill="#808080"/>
+																			</g>
+																		</g>
+																	</g>
+																</svg>
+
+															</a>
+														</div>
+													</div>
+											</div>
+
+											</footer>
+										</main>
+										<script src="js/main.js"></script>
+									</div>
+								</body>
+
+								</html>
